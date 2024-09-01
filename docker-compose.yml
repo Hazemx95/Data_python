@@ -1,0 +1,13 @@
+version: '4'
+services:
+
+  python-work:
+    image: jupyter/minimal-notebook:x86_64-ubuntu-22.04
+    container_name: jupyter
+    volumes:
+      - ./python_test:/home/jovyan/work
+    ports:
+      - 8888:8888
+    
+    
+
